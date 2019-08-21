@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liskov", "Liskov\Liskov.csproj", "{1972A964-D241-4823-94DD-8DD73AED145C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liskov Unit Test", "Liskov Unit Test\Liskov Unit Test.csproj", "{C094B914-5691-407F-BDDE-3DCF59C72CC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1972A964-D241-4823-94DD-8DD73AED145C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1972A964-D241-4823-94DD-8DD73AED145C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1972A964-D241-4823-94DD-8DD73AED145C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1972A964-D241-4823-94DD-8DD73AED145C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C094B914-5691-407F-BDDE-3DCF59C72CC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C094B914-5691-407F-BDDE-3DCF59C72CC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C094B914-5691-407F-BDDE-3DCF59C72CC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C094B914-5691-407F-BDDE-3DCF59C72CC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7E4F043-2415-4247-8C80-75326162859E}
+	EndGlobalSection
+EndGlobal
