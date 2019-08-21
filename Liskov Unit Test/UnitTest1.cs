@@ -16,7 +16,7 @@ namespace Liskov_Unit_Test
             var rec = new Cuadrado();
             rec.Base = b;
             rec.Altura = h;
-            Assert.AreEqual(rec.GetSuperficie(), sup);
+            Assert.AreEqual(sup, rec.GetSuperficie());
         }
 
     }
