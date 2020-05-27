@@ -9,11 +9,12 @@ namespace Liskov_Unit_Test
     {
         [DataRow(1, 1, 1)]
         [DataRow(2, 2, 4)]
-        [DataRow(3, 4, 12)]
+        [DataRow(3, 6, 18)]
+        [DataRow(8, 7, 56)]
         [DataTestMethod]
         public void TestMethod1(int b, int h, int sup)
         {
-            var rec = new Rectangulo();
+            Rectangulo rec = new Cuadrado();
             rec.Base = b;
             rec.Altura = h;
             Assert.AreEqual(sup, rec.GetSuperficie());
