@@ -14,11 +14,10 @@ namespace Liskov_Unit_Test
         [DataTestMethod]
         public void TestMethod1(int b, int h, int sup)
         {
-            Rectangulo rec = new Cuadrado();
-            rec.Base = b;
-            rec.Altura = h;
+            Cuadrado rec = new Cuadrado();
+            rec.setBase(b);
+            rec.setAltura(h);
             Assert.AreEqual(sup, rec.GetSuperficie());
         }
-
     }
 }

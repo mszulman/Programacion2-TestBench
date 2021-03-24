@@ -6,37 +6,35 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    class Program
-    {
-        public delegate void Hablar(string texto);
+    public delegate void Hablar(Mascota mascota, string texto);
 
+    partial class Program
+    {
         static void Main(string[] args)
         {
-            var perrito = new Mascota();
-            perrito.Hablo += Sarasa;
+            var perrito = new Perro("Albert");
+            var gatito = new Gato("Maurice");
 
-            perrito.Ladrar();
+            perrito.Hablo += CapturarLoQueMeDicen;
+            perrito.Hablo += RepetirLoQueMeDicen;
+
+            gatito.Hablo += CapturarLoQueMeDicen;
+            gatito.Hablo += RepetirLoQueMeDicen;
+
+            perrito.DecirAlgo();
+            gatito.DecirAlgo();
 
             Console.ReadLine();
         }
 
-        public static void Sarasa(string texto)
+        public static void CapturarLoQueMeDicen(Mascota mascota, string texto)
         {
-            Console.WriteLine(texto);
+            Console.WriteLine(mascota.Nombre + " dijo \"" + texto + "\"\n");
         }
 
-        public class Mascota
+        public static void RepetirLoQueMeDicen(Mascota mascota, string texto)
         {
-            public Mascota()
-            {
-            }
-
-            public event Hablar Hablo;
-
-            public void Ladrar()
-            {
-                Hablo("Guau Guau");
-            }
+            Console.WriteLine(texto + " (" + mascota.Nombre + " dixit)\n");
         }
     }
 }
