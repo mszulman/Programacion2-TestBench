@@ -12,18 +12,6 @@ namespace Liskov
 
         protected int _altura;
 
-        //public int Base
-        //{
-        //    get { return _base; }
-        //    set { _base = value; }
-        //}
-
-        //public int Altura
-        //{
-        //    get { return _altura; }
-        //    set { _altura = value; }
-        //}
-
         public int getBase()
         {
             return _base;
