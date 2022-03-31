@@ -14,7 +14,7 @@ namespace Liskov_Unit_Test
         [DataTestMethod]
         public void TestMethod1(int b, int h, int sup)
         {
-            Cuadrado rec = new Cuadrado();
+            var rec = new Cuadrado();
             rec.setBase(b);
             rec.setAltura(h);
             Assert.AreEqual(sup, rec.GetSuperficie());

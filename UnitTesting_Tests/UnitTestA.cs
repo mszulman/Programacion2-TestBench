@@ -11,14 +11,14 @@ namespace UnitTesting_Tests
         public void TestMethodA()
         {
             var a = new UnitTesting_Code.ClassA();
-            Assert.AreEqual("Hola", a.DeciHola());
+            Assert.AreEqual("Hola!", a.DeciHola());
         }
 
         [TestMethod]
         public void TestMethodB()
         {
             var a = new UnitTesting_Code.ClassA();
-            a.DeciHola().Should().Be("Hola");
+            a.DeciHola().Should().Be("Hola!");
         }
     }
 }
